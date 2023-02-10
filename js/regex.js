@@ -50,3 +50,11 @@ let fixRegex = /(\w+)\s(\w+)\s(\w+)/;
 let replaceText = "$3 $2 $1"; 
 let i = str.replace(fixRegex, replaceText);
 console.log(i);
+
+
+// Remove Whitespace from Start and End
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; 
+let j = hello.replace(wsRegex, "");
+console.log(j);
