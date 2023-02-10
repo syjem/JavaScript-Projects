@@ -11,5 +11,12 @@ console.log(result);
 let username = "JackOfAllTrades";
 let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i; // Change this line
 let output = userCheck.test(username);
-
 console.log(output);
+
+
+// Match Non-Whitespace Characters
+
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // Change this line
+let space = sample.match(countNonWhiteSpace);
+console.log(space);
