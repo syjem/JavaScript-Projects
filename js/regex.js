@@ -40,3 +40,13 @@ let sampleWord = "astronaut";
 let pwRegex = /(?=\w{6})(?=\w*\d{2})/;
 let r = pwRegex.test(sampleWord);
 console.log(r);
+
+
+
+// Use Capture Groups to Search and Replace
+
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; 
+let replaceText = "$3 $2 $1"; 
+let i = str.replace(fixRegex, replaceText);
+console.log(i);
