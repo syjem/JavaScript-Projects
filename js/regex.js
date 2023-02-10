@@ -14,6 +14,16 @@ let output = userCheck.test(username);
 console.log(output);
 
 
+
+// Match-Whitespace
+let x = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let a = x.match(countWhiteSpace);
+console.log(a);
+
+
+
+
 // Match Non-Whitespace Characters
 
 let sample = "Whitespace is important in separating words";
