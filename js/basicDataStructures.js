@@ -45,3 +45,18 @@ function forecast(arr) {
     return arr.slice(2, 4);
   }
   console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+
+
+//  Copy an Array with the Spread Operator
+
+function copyMachine(arr, num) {
+    let newArr = [];
+    while (num >= 1) {
+      let x = [...arr];
+      newArr.push(x);
+      num--;
+    }
+    return newArr;
+  }
+  console.log(copyMachine([true, false, true], 2));
