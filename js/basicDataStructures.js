@@ -82,3 +82,19 @@ function quickCheck(arr, elem) {
     return false;
   }
   console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+
+
+
+// Determined which data items are greater than 10
+
+  function greaterThanTen(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 10) {
+        newArr.push(arr[i]);
+      }
+    }
+    return newArr;
+  }
+  greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
