@@ -115,3 +115,19 @@ function filteredArray(arr, elem) {
     return newArr;
   }
   console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+
+
+
+// Add Key-Value Pairs to JavaScript Objects
+
+let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28
+  };
+
+    foods.bananas = 13;
+    foods.grapes = 35;
+    foods.strawberries = 27;
+  
+  console.log(foods);
